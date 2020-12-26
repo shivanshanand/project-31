@@ -8,14 +8,12 @@ class Division{
         this.height=h;
 
         World.add(world, this.body);
-
-    var division=[];
-    var divisionheight=300;
     }
 
     show(){
-        for(var s=0; s<=width; s=s+80){
-            division.push(new Division(s,height-divisionheight/2, 10, divisionheight));
-        }
+        var pos=this.body.position;
+        rectMode(CENTER);
+        fill("purple");
+        rect(pos.x,pos.y,this.w,this.h)
     }
 }
