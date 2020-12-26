@@ -1,0 +1,9 @@
+class Particles{
+    constructor(){
+        
+    }
+
+    display(){
+    }
+
+}
