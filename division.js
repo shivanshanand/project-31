@@ -1,4 +1,4 @@
-class Division{
+class Divisions{
     constructor(x,y,w,h){
         var op={
             isStatic:true
