@@ -12,7 +12,7 @@ function setup() {
   world = engine.world;
 
   ground1=new Ground(220,480,480,10);
-  division1=new Division(100,370,10,300);
+  division1=new Divisions(100,370,10,300);
 
 }
 
@@ -21,11 +21,10 @@ function draw() {
   Engine.update(engine);
 
   for(var s=0; s<=width; s=s+80){
-    divisions.push(new Division(s,height-divisionheight/2, 10, divisionheight));
+    divisions.push(new Divisions(s,height-divisionheight/2, 10, divisionheight));
 }
 
 ground1.display();
-division1.show();
 
 
 }
