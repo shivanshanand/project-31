@@ -10,10 +10,11 @@ class Divisions{
         World.add(world, this.body);
     }
 
-    show(){
+    display(){
         var pos=this.body.position;
         rectMode(CENTER);
-        fill("purple");
-        rect(pos.x,pos.y,this.w,this.h)
+        fill("yellow");
+        rect(pos.x,pos.y,this.width,this.height)
+
     }
 }
