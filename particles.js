@@ -4,7 +4,7 @@ class Particle{
             restitution:0.5
         }
 
-        this.body=Bodies.circle(x,y,r,op);
+        this.body=Bodies.circle(x,y,r/2,op);
 
         this.color=color(random(0,255));
 
