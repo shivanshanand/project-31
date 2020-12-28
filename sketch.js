@@ -19,32 +19,30 @@ function setup() {
   world = engine.world;
 
   ground1=new Ground(width/2,height,width,20);
-  //division1=new Divisions(100,370,10,300);
 
   for(var s=0; s<=width; s=s+80){
     divisions.push(new Divisions(s,height-divisionheight/2, 10, divisionheight));
 }
 
 for(var i=30; i<=width; i=i+50){
- plinkos.push(new Plinko(i,75,15))
+ plinkos.push(new Plinko(i,75,20))
 }
 
 for(var i=30; i<=width; i=i+50){
-  plinkos.push(new Plinko(i,140,15))
+  plinkos.push(new Plinko(i,140,20))
  }
  
 for(var i=30; i<=width; i=i+50){
-  plinkos.push(new Plinko(i,205,15))
+  plinkos.push(new Plinko(i,205,20))
  }
 
  for(var i=30; i<=width; i=i+50){
-  plinkos.push(new Plinko(i,270,15))
+  plinkos.push(new Plinko(i,270,20))
  }
  
  for(var i=30; i<=width; i=i+50){
-  plinkos.push(new Plinko(i,335,15))
+  plinkos.push(new Plinko(i,335,20))
  }
-
 }
 
 function draw() {
@@ -68,8 +66,4 @@ function draw() {
   for(var s=0; s<plinkos.length; s++){
     plinkos[s].display();
   }  
-
-
-//division1.show();
-
 }
