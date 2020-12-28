@@ -12,9 +12,11 @@ class Divisions{
 
     display(){
         var pos=this.body.position;
+        push();
         rectMode(CENTER);
         fill("yellow");
         rect(pos.x,pos.y,this.width,this.height)
+        pop();
 
     }
 }
