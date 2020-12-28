@@ -5,7 +5,7 @@ class Plinko{
             restitution:0.3
         }
 
-        this.body=Bodies.circle(x,y,r,op);
+        this.body=Bodies.circle(x,y,r/2,op);
 
         World.add(world, this.body);
         this.r=r;
